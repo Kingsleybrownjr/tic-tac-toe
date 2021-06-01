@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: "Open Sans", sans-serif;
+}
+
+body {
+	background: #f1ac88ff;
+}
+
+.title {
+	font-size: 3rem;
+	color: #783937ff;
+	margin-bottom: 2rem;
+}
+
+.game-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.row {
+	display: flex;
+}
+
+.column {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fc766aff;
+	height: 7rem;
+	width: 7rem;
+	border: 1px solid #783937ff;
+	cursor: pointer;
+	transition: background-color 0.3s ease-in;
+}
+
+.column:hover {
+	background-color: rgba(255, 120, 108, 0.5);
+}
+
+.player {
+	font-size: 7rem;
+	color: rgb(148, 76, 76);
+}
+
+.reset {
+	color: #783937ff;
+	text-decoration: none;
+	font-size: 2.5rem;
+}
+
+.game-over-message {
+	font-size: 2.5rem;
+	color: #fc766aff;
+}
+
+.player-turn {
+	font-size: 2rem;
+	margin-top: 2rem;
+	color: #783937ff;
+	text-transform: capitalize;
+	font-weight: 600;
+	letter-spacing: 0.2rem;
+}
